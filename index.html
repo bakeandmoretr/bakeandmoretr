@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bake & More Qr Menu</title>
+  </head>
+
+  <body style="max-width: 768px; margin: auto">
+    <div class="language-popup" id="languagePopup">
+      <div class="language-box">
+        <h2>Lütfen Dilinizi Seçin / Please Choose Your Language / Выберите язык</h2>
+        <button class="language-btn tr" onclick="redirectTo('tr')">TÜRKÇE</button>
+        <button class="language-btn eng" onclick="redirectTo('eng')">ENGLISH</button>
+        <button class="language-btn rus" onclick="redirectTo('rus')">РУССКИЙ</button>
+      </div>
+    </div>
+    <a href="#navigation" id="goTop" title="Go to top"
+      ><img
+        src="images/icons/arrow-up-solid.svg"
+        class="upArrow"
+        style="width: 27px"
+    /></a>
+    <header id="navbar"></header>
+
+    <div class="land" id="landing">
+      <img src="images/trans_logo.svg" class="mainLogo" />
+      <h3>Bake & More'a Hoş Geldiniz</h3>
+      <h4>Şekerden de tatlı anlar için...<br></br></h4>
+      <h4>Bake & More sizi bekliyor</h4>
+    </div>
+    <br />
+
+    <!-- Kategori İçin
+    <hr id="kategori id"/>
+    <div class="menu">
+      <h3>Kategori Adı</h3>
+      <div class="urun" id="ham">
+        <div class="content">
+          <a
+            href="images/breakfast/breakburger.webp"
+            data-lightbox="break-burger"
+            data-title="BREAKBURGER"
+          >
+            <div class="name">Breakburger</div>
+          </a>
+          <div class="desc">
+            130gr köfte, domates, marul, turşu, ketçap, mayonez. Patates
+            kızartması ile servis edilir.
+          </div>
+        </div>
+        <div class="price">280₺</div>
+      </div>
+    </div> -->
+    
+    <hr id="navigation" />
+    <div class="nav">
+      KAHVALTI
+      <ul>
+        <a href="#breakspes">Kahvaltı Spesiyalleri</a>
+        <a href="#breakaddons">Kahvaltı İlaveleri</a>
+        <a href="#breakburger">Kahvaltı Burgerleri</a>
+        <a href="#omelele">Omletler</a>
+        <a href="#sweetbreakspes">Tatlı Kahvaltı Spesiyalleri</a>
+        <a href="#breaksandwiches">Sandviçler</a>
+      </ul>
+      İÇECEKLER
+      <ul>
+        <a href="#craftedcoffee">El Yapımı Kahveler</a>
+        <a href="#craftedcoldcoffee">El Yapımı Soğuk Kahveler</a>
+        <a href="#teablends">Çay Karışımları</a>
+        <a href="#smoothies">Lezzetli Smoothieler</a>
+        <a href="#lemonade">Eşsiz Ev Yapımı Limonatalarımız</a>
+        <a href="#refreshings">Hafif Serinleticiler</a>
+        <a href="#uniquerefreshings">Benzersiz Serinleticiler</a>
+      </ul>
+    </div>
+    <hr id="breakspes"/>
+    <div class="menu">
+      <h3>Kahvaltı Spesiyalleri</h3>
+      <div class="urun" id="cıryur">
+        <div class="content">
+          <div class="name">Çırpılmış Yumurta</div>
+          <div class="desc">
+            Çırpılmış Yumurta, Kurutulmuş Domates, Tulum Zest
+          </div>
+        </div>
+        <div class="price">330₺</div>
+      </div>
+      <div class="urun" id="avocıryur">
+        <div class="content">
+          <div class="name">Avokadolu Çırpılmış Yumurta</div>
+          <div class="desc">
+            Avokado dilimleri, Çırpılmış Yumurta, Tulum Zest
+          </div>
+        </div>
+        <div class="price">380₺</div>
+      </div>
+      <div class="urun" id="hellim">
+        <div class="content">
+          <div class="name">Hellim</div>
+          <div class="desc">
+            Avokado Ezmesi, Ballı Ve Susamlı Kızarmış Hellim
+          </div>
+        </div>
+        <div class="price">350₺</div>
+      </div>
+      <div class="urun" id="smokedsalmon">
+        <div class="content">
+          <div class="name">Somon Füme</div>
+          <div class="desc">
+            Dereotlu Krem Peynir, Somon Füme, Avokado Dilimleri, Kapari, Salatalık
+          </div>
+        </div>
+        <div class="price">370₺</div>
+      </div>
+      <div class="urun" id="smokedbeefegg">
+        <div class="content">
+          <div class="name">Füme Etli Çırpılmış Yumurta</div>
+          <div class="desc">
+            Çırpılmış Yumurta, Füme Et, Cheddar Peyniri, Tulum Zest
+          </div>
+        </div>
+        <div class="price">450₺</div>
+      </div>
+      <div class="urun" id="smokedsausagegg">
+        <div class="content">
+          <div class="name">Füme Sosisli Çırpılmış Yumurta</div>
+          <div class="desc">
+            Çırpılmış Yumurta, Emmantel Sosis, Tulum Zest
+          </div>
+        </div>
+        <div class="price">440₺</div>
+      </div>
+      </div>
+      &nbsp;
+      <div class="urun" id="ac1">
+        <div class="content">
+          <div class="desc">
+            Kahvaltı Spesiyalleri yanında salata ve ekşi 
+            mayalı tam buğday ekmeği ile servis edilir.
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr id="breakaddons" />
+    <div class="menu">
+      <h3>Kahvaltı İlaveleri</h3>
+      <div class="urun" id="ilavekuruvasan">
+        <div class="content">
+          <div class="name">Kruvasan (Ekşi Mayalı Ekmek Yerine)</div>
+        </div>
+        <div class="price">80₺</div>
+      </div>
+      <div class="urun" id="ilaveavokado">
+        <div class="content">
+          <div class="name">Dilim Avokado</div>
+        </div>
+        <div class="price">60₺</div>
+      </div>
+      <div class="urun" id="addoneggs">
+        <div class="content">
+          <div class="name">Göz Yumurta / Poşe Yumurta / Çırpılmış Yumurta</div>
+        </div>
+        <div class="price">60₺</div>
+      </div>
+      <div class="urun" id="ilavebeefsausage">
+        <div class="content">
+          <div class="name">Füme Et Sosis</div>
+        </div>
+        <div class="price">140₺</div>
+      </div>
+      </div>
+      <hr id="breakburger" />
+      <div class="menu">
+        <h3>Kahvaltı Burgerleri</h3>
+        <div class="urun" id="avobreakburger">
+          <div class="content">
+            <div class="name">Avokadolu Kahvaltı Burgeri</div>
+            <div class="desc">
+              Çırpılmış Yumurta, Avokado Dilimleri, Karamelize Soğan, Cheddar Peyniri, 
+              Sriracha Soslu Mayonez
+            </div>
+          </div>
+          <div class="price">350₺</div>
+        </div>
+        <div class="urun" id="smokedbeefbreakburger">
+          <div class="content">
+            <div class="name">Füme Etli Kahvaltı Burgeri</div>
+            <div class="desc">
+              Çırpılmış Yumurta, Avokado Dilimleri, Füme Dana Antrikot, Cheddar Peyniri, 
+              Sriracha Soslu Mayonez
+            </div>
+          </div>
+          <div class="price">440₺</div>
+        </div>
+        </div>
+      </div>
+      </div>
+      <hr id="omelele" />
+      <div class="menu">
+        <h3>Omletler</h3>
+        <div class="urun" id="french">
+          <div class="content">
+            <div class="name">Fransız Omleti</div>
+            <div class="desc">
+              Sade Omlet
+            </div>
+          </div>
+          <div class="price">310₺</div>
+        </div>
+        </div>
+        <div class="urun" id="3cheeseom">
+          <div class="content">
+            <div class="name">3 Peynirli Omlet</div>
+            <div class="desc">
+              Mozarella, Tulum, Cheddar Peyniri
+            </div>
+          </div>
+          <div class="price">360₺</div>
+        </div>
+        </div>
+        <div class="urun" id="hamandcheeseom">
+          <div class="content">
+            <div class="name">Jambon Ve Peynirli Omlet</div>
+            <div class="desc">
+              Kaşar Peyniri Ve Jambon
+            </div>
+          </div>
+          <div class="price">400₺</div>
+        </div>
+        </div>
+        <div class="urun" id="veggieom">
+          <div class="content">
+            <div class="name">Sebzeli Omlet</div>
+            <div class="desc">
+              Mozarella, Mantar, Domates, Yeşil Biber
+            </div>
+          </div>
+          <div class="price">370₺</div>
+        </div>
+        </div>
+        <div class="urun" id="ac1">
+          <div class="content">
+            <div class="desc">
+              Omletler Tam Buğday Unlu Ekşi Maya Ekmek Ve Salata İle Servis Edilir.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="sweetbreakspes" />
+    <div class="menu">
+      <h3>Tatlı Kahvaltı Spesiyalleri</h3>
+      <div class="urun" id="grabowl">
+        <div class="content">
+          <div class="name">Granola Bowl</div>
+          <div class="desc">
+            Yoğurt, Granola, Muz, Çilek, Yaban Mersini, Çiya Tohumu
+          </div>
+        </div>
+        <div class="price">370₺</div>
+      </div>
+      </div>
+      <div class="urun" id="bananayulaf">
+        <div class="content">
+          <div class="name">Muzlu Yulaf Lapası</div>
+          <div class="desc">
+            Yulaf Lapası, Muz, Tarçın, Rende Çikolata, File Badem
+          </div>
+        </div>
+        <div class="price">320₺</div>
+      </div>
+      <div class="urun" id="grabowl">
+        <div class="content">
+          <div class="name">Berry Yulaf Lapası</div>
+          <div class="desc">
+            Yulaf Lapası, Çilek, Yaban Mersini, Tarçın, File Badem
+          </div>
+        </div>
+        <div class="price">350₺</div>
+      </div>
+      </div>
+      <hr id="breaksandwiches" />
+    <div class="menu">
+      <h3>Sandeviçler</h3>
+      <div class="urun" id="simitsand">
+        <div class="content">
+          <div class="name">Simit Sandwich</div>
+          <div class="desc">
+            Simit, Ezine Peyniri, Domates
+          </div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      </div>
+      <div class="urun" id="caprese">
+        <div class="content">
+          <div class="name">Caprese</div>
+          <div class="desc">
+            Ciabatta Ekmeği, Suda Mozarella, Domates, Pesto Sos, Taze Fesleğen
+          </div>
+        </div>
+        <div class="price">290₺</div>
+      </div>
+      </div>
+      <div class="urun" id="smokedturkeysand">
+        <div class="content">
+          <div class="name">Hindi Füme</div>
+          <div class="desc">
+            Ciabatta Ekmeği, Suda Mozarella, Domates, Pesto Sos, Taze Fesleğen
+          </div>
+        </div>
+        <div class="price">350₺</div>
+      </div>
+      </div>
+      <div class="urun" id="smokedbeefsand">
+        <div class="content">
+          <div class="name">Füme Et</div>
+          <div class="desc">
+            Focaccia Ekmeği, Krem Peynirli Pesto Sos, Füme Et, Bebek Roka, Domates Dilimleri, Suda Mozarella, Balsamic Glaze
+          </div>
+        </div>
+        <div class="price">390₺</div>
+      </div>
+      </div>
+      <div class="urun" id="smokedsalmonsand">
+        <div class="content">
+          <div class="name">Somon Füme</div>
+          <div class="desc">
+            Ciabatta Ekmeği, Dereotlu Krem Peynir Sos, Somon Füme, Dilim Avokado, Traşlanmış Salatalık, Bebek Roka, Kapari
+          </div>
+        </div>
+        <div class="price">390₺</div>
+      </div>
+      </div>
+      <div class="urun" id="hamandcheesesand">
+        <div class="content">
+          <div class="name">Kaşar Ve Jambon</div>
+          <div class="desc">
+            Focaccia Ekmeği, Kaşar Peyniri, Jambon, Marul, Turşu, Krem Peynir
+          </div>
+        </div>
+        <div class="price">330₺</div>
+      </div>
+      </div>
+      <div class="urun" id="trufflecottosand">
+        <div class="content">
+          <div class="name">Trüflü Dana Cotto</div>
+          <div class="desc">
+            Focaccia Ekmeği, Trüf Sos, Mozarella Peyniri, Dana Cotto, Karamelize Soğan, Bebek Roka
+          </div>
+        </div>
+        <div class="price">410₺</div>
+      </div>
+      </div>
+    </div>
+    <hr id="craftedcoffee"/>
+    <div class="menu">
+      <h3>El Yapımı Kahveler</h3>
+      <div class="urun" id="esp">
+        <div class="content">
+          <div class="name">Espresso (Tek Yada Çift Shot)</div>
+        </div>
+        <div class="price">110/140₺</div>
+      </div>
+      <div class="urun" id="filteredcoff">
+        <div class="content">
+          <div class="name">Filtre Kahve</div>
+        </div>
+        <div class="price">100₺</div>
+      </div>
+      <div class="urun" id="americano">
+        <div class="content">
+          <div class="name">Americano</div>
+        </div>
+        <div class="price">130₺</div>
+      </div>
+      <div class="urun" id="decafamericano">
+        <div class="content">
+          <div class="name">Decaf Americano (Kafeinsiz)</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="cappuccino">
+        <div class="content">
+          <div class="name">Cappuccino</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="decafcappuccino">
+        <div class="content">
+          <div class="name">Decaf Cappuccino (Kafeinsiz)</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="lactosecappuccino">
+        <div class="content">
+          <div class="name">Lactose-Free Milk Cappuccino (Laktozsuz)</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="vegancappuccino">
+        <div class="content">
+          <div class="name">Vegan Cappuccino</div>
+          <div class="desc">
+            Hindistan Cevizi, Badem Ya Da Yulaf Sütü
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="plainlatte">
+        <div class="content">
+          <div class="name">Latte</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="decaflatte">
+        <div class="content">
+          <div class="name">Decaf Latte (Kafeinsiz)</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="lactoselatte">
+        <div class="content">
+          <div class="name">Lactose-Free Milk Latte (Laktozsuz)</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="veganlatte">
+        <div class="content">
+          <div class="name">Vegan Latte</div>
+          <div class="desc">
+            Hindistan Cevizi, Badem Ya Da Yulaf Sütü
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="plainflatwhite">
+        <div class="content">
+          <div class="name">Flat White</div>
+          <div class="desc">
+            Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="decafflatwhite">
+        <div class="content">
+          <div class="name">Decaf Flat White (Kafeinsiz)</div>
+          <div class="desc">
+            Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="lactoseflatwhite">
+        <div class="content">
+          <div class="name">Lactose-Free Flat White (Laktozsuz)</div>
+          <div class="desc">
+            Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="veganflatwhite">
+        <div class="content">
+          <div class="name">Vegan Flat White (Laktozsuz)</div>
+          <div class="desc">
+            Hindistan Cevizi, Badem Ya Da Yulaf Sütü İle Ve Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="plaincortado">
+        <div class="content">
+          <div class="name">Cortado</div>
+          <div class="desc">
+            Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="decafcortado">
+        <div class="content">
+          <div class="name">Decaf Cortado (Kafeinsiz)</div>
+          <div class="desc">
+            Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="lactosecortado">
+        <div class="content">
+          <div class="name">Lactose-Free Cortado (Laktozsuz)</div>
+          <div class="desc">
+            Çift Shot Espresso ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="plainmatcha">
+        <div class="content">
+          <div class="name">Matcha Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="veganmatcha">
+        <div class="content">
+          <div class="name">Vegan Matcha Latte</div>
+          <div class="desc">
+            Hindistan Cevizi, Badem Ya Da Yulaf Sütü ile hazırlanır.
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="caffemocha">
+        <div class="content">
+          <div class="name">Coffee Mocha</div>
+          <div class="desc">
+            Beyaz Ya da Bitter Çikolata, Karamel, Tuzlu Karamel, Tereyağlı Karamel
+          </div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="turkishcoffee">
+        <div class="content">
+          <div class="name">Türk Kahvesi (Normal / Duble)</div>
+        </div>
+        <div class="price">90/150₺</div>
+      </div>
+      <div class="urun" id="hotchocolate">
+        <div class="content">
+          <div class="name">Sıcak Çikolata</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="extraesp">
+        <div class="content">
+          <div class="name">Extra Shot Espresso</div>
+        </div>
+        <div class="price">50₺</div>
+      </div>
+    </div>
+    <hr id="craftedcoldcoffee"/>
+    <div class="menu">
+      <h3>El Yapımı Soğuk Kahveler</h3>
+      <div class="urun" id="icedamericano">
+        <div class="content">
+          <div class="name">Iced Americano</div>
+        </div>
+        <div class="price">130₺</div>
+      </div>
+      <div class="urun" id="decaficedamericano">
+        <div class="content">
+          <div class="name">Decaf Iced Americano (Kafeinsiz)</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="icedcoffeewhite">
+        <div class="content">
+          <div class="name">Iced Coffee White</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="decaficedcoffeewhite">
+        <div class="content">
+          <div class="name">Decaf Iced Coffee White (Kafeinsiz)</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="veganicedcoffeewhite">
+        <div class="content">
+          <div class="name">Vegan Iced Coffee White</div>
+          <div class="desc">
+            Hindistan Cevizi, Badem Ya Da Yulaf Sütü
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedmatcha">
+        <div class="content">
+          <div class="name">Iced Matcha Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedveganmatcha">
+        <div class="content">
+          <div class="name">Iced Vegan Matcha Latte</div>
+          <div class="desc">
+            Hindistan Cevizi, Badem Ya Da Yulaf Sütü
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="icedlactoselatte">
+        <div class="content">
+          <div class="name">Iced Lactose-Free Latte (Laktozsuz)</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="flavouredicelatte">
+        <div class="content">
+          <div class="name">Flavoured İce Latte</div>
+          <div class="desc">
+            Fındık, Karamelli Fındık, Bal Kabağı, Lavanta, Vanilya, Karamel, Şeftali, Nane, Frenk Üzümü, Çilek, Elma, Muz
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="decafflavouredicelatte">
+        <div class="content">
+          <div class="name">Decaf Flavoured İce Latte (Kafeinsiz)</div>
+          <div class="desc">
+            Fındık, Karamelli Fındık, Bal Kabağı, Lavanta, Vanilya, Karamel, Şeftali, Nane, Frenk Üzümü, Çilek, Elma, Muz
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="icedmocha">
+        <div class="content">
+          <div class="name">Iced Coffee Mocha</div>
+          <div class="desc">
+            Beyaz Ya Da Bitter Çikolata, Karamel, Tuzlu Karamel, Tereyağlı Karamel
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedfrappacino">
+        <div class="content">
+          <div class="name">Flavaoured Iced Frappacino</div>
+          <div class="desc">
+            Beyaz Ya Da Bitter Çikolata, Vanilya, Karamel, Şeftali, Nane, Çilek, Muz, Tereyağlı Karamel, Tuzlu Karamel
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="icedtoffee">
+        <div class="content">
+          <div class="name">Bake And More Toffee Latte</div>
+          <div class="desc">
+            Karamelli Sütlü Kahve Ve Çikolata Sosu
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="extraesp">
+        <div class="content">
+          <div class="name">Extra Shot Espresso</div>
+        </div>
+        <div class="price">50₺</div>
+      </div>
+      <div class="urun" id="ac1">
+        <div class="content">
+          <div class="desc">
+              Tüm Frappeler Krem Şanti İle Servis Edilir. Farklı Talebiniz Varsa Lütfen Bildiriniz.
+          </div>
+        </div>
+      </div>
+      <hr id="teablends"/>
+    <div class="menu">
+      <h3>Çay Karışımları</h3>
+      <div class="urun" id="chailatte">
+        <div class="content">
+          <div class="name">Chai Tea Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="veganchailatte">
+        <div class="content">
+          <div class="name">Vegan Chai Tea Latte</div>
+          <div class="desc">
+              Hindistan Cevizi, Badem Ya Da Yulaf Sütü
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="icedchailatte">
+        <div class="content">
+          <div class="name">İced Chai Tea Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedveganchailatte">
+        <div class="content">
+          <div class="name">Vegan İced Chai Tea Latte</div>
+          <div class="desc">
+              Hindistan Cevizi, Badem Ya Da Yulaf Sütü
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="looseleafteas">
+        <div class="content">
+          <div class="name">Yaprak Bitki Çayları</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="englishtea">
+        <div class="content">
+          <div class="name">English PG Tips</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="englishteapot">
+        <div class="content">
+          <div class="name">English PG Tips Tea Pot</div>
+        </div>
+        <div class="price">275₺</div>
+      </div>
+      <div class="urun" id="turkishtea">
+        <div class="content">
+          <div class="name">Türk Çayı (Küçük / Büyük)</div>
+        </div>
+        <div class="price">50/90₺</div>
+      </div>
+    </div>
+    <hr id="smoothies"/>
+    <div class="menu">
+      <h3>Lezzetli Smoothieler</h3>
+      <div class="urun" id="strawberrywhirl">
+        <div class="content">
+          <div class="name">Strawberry Whirl</div>
+          <div class="desc">
+            Çilek, Muz, Portakal Suyu
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="strawberrynirvana">
+        <div class="content">
+          <div class="name">Strawberry Nirvana</div>
+          <div class="desc">
+            Çilek, Ananas, Ananas Suyu, Frenk Üzümü
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="thunder">
+        <div class="content">
+          <div class="name">Yellow Thunder</div>
+          <div class="desc">
+            Muz, Elma, Ananas, Ananas Ve Portakal Suyu
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="tropicana">
+        <div class="content">
+          <div class="name">Tropicana</div>
+          <div class="desc">
+            Elma, Kivi, Ananas Suyu
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="smoothiecombo">
+        <div class="content">
+          <div class="name">Bake & More Frozen Combo</div>
+          <div class="desc">
+            Çarkıfelek Meyvesi, Mango, Muz, Kivi, Kızılcık Suyu
+          </div>
+        </div>
+        <div class="price">260₺</div>
+      </div>
+      <hr id="lemonade"/>
+    <div class="menu">
+      <h3>Eşsiz Ev Yapımı Limonatalarımız</h3>
+      <div class="urun" id="classiclemonade">
+        <div class="content">
+          <div class="name">Klasik Ev Yapımı Limonata</div>
+        </div>
+        <div class="price">130₺</div>
+      </div>
+      <div class="urun" id="strawberrylemonade">
+        <div class="content">
+          <div class="name">Çilekli Ev Yapımı Limonata</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="mintlemonade">
+        <div class="content">
+          <div class="name">Naneli Ev Yapımı Limonata</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="applelemonade">
+        <div class="content">
+          <div class="name">Elmalı Ev Yapımı Limonata</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="kiwilemonade">
+        <div class="content">
+          <div class="name">Kivili Ev Yapımı Limonata</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="mangolemonade">
+        <div class="content">
+          <div class="name">Mangolu Ev Yapımı Limonata</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="frozenlemonade">
+        <div class="content">
+          <div class="name">Eşsiz Donuk Limonata</div>
+          <div class="desc">
+            Kivi, Ananas, Ev Yapımı Limonata
+          </div>
+        </div>
+        <div class="price">185₺</div>
+      </div>
+    </div>
+    <hr id="refreshings"/>
+    <div class="menu">
+      <h3>Hafif Serinleticiler</h3>
+      <div class="urun" id="water">
+        <div class="content">
+          <div class="name">Su (Küçük / Büyük)</div>
+        </div>
+        <div class="price">50/80₺</div>
+      </div>
+      <div class="urun" id="soda">
+        <div class="content">
+          <div class="name">Soda (Küçük / Büyük)</div>
+        </div>
+        <div class="price">75/125₺</div>
+      </div>
+      <div class="urun" id="canneddrinks">
+        <div class="content">
+          <div class="name">Kutu İçecekler</div>
+          <div class="desc">
+            Kola, Kola Zero, Fanta, Sprite, Soğuk Çay, Tonic, Bitter Lemon
+          </div>
+        </div>
+        <div class="price">90₺</div>
+      </div>
+      <div class="urun" id="milkshake">
+        <div class="content">
+          <div class="name">Milkshakes</div>
+          <div class="desc">
+            Lütfen Dondurmanızı Tezgahtan Seçiniz. (Tüm Milkshake'ler Krem Şanti İle Servis Edilir. Farklı Talebiniz Varsa Lütfen Bildiriniz.)
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="cartonjuices">
+        <div class="content">
+          <div class="name">Karton Meyve Suları</div>
+          <div class="desc">
+            Portakal, Elma, Ananas, Vişne
+          </div>
+        </div>
+        <div class="price">90₺</div>
+      </div>
+      <div class="urun" id="freshorangejuice">
+        <div class="content">
+          <div class="name">Taze Sıkılmış Portakal Suyu</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="redbull">
+        <div class="content">
+          <div class="name">Redbull</div>
+        </div>
+        <div class="price">140₺</div>
+      </div>
+      <hr id="uniquerefreshings"/>
+    <div class="menu">
+      <h3>Benzersiz Serinleticiler</h3>
+      <div class="urun" id="coolbotanica">
+        <div class="content">
+          <div class="name">Cool Botanica</div>
+          <div class="desc">
+            Hibiscus Çayı, Nar Ve Menta Cubana Aroması, Portakal Dilimi, Taze Nane
+          </div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="jasminesunrise">
+        <div class="content">
+          <div class="name">Jasmine Sunrise</div>
+          <div class="desc">
+            Yasemin Çayı, Şeftali, Greyfurt Aroması, Portakal Kabuğu
+          </div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="pistachiocreamcrush">
+        <div class="content">
+          <div class="name">Pistachio Cream Crush</div>
+          <div class="desc">
+            Antep Fıstığı Aroması, Cheesecake Sosu, Süt, Tek Shot Espresso Ve Kahve Çekirdeği
+          </div>
+        </div>
+        <div class="price">200₺</div>
+      </div>
+      <div class="urun" id="mangocubana">
+        <div class="content">
+          <div class="name">Mango Cubana</div>
+          <div class="desc">
+            Mango Çayı, Mango Aroması, Menta Cubana, Taze Limon Suyu, Limon Dilimi Ve Nane
+          </div>
+        </div>
+        <div class="price">190₺</div>
+      </div>
+      <div class="urun" id="matchamirage">
+        <div class="content">
+          <div class="name">Matcha Mirage</div>
+          <div class="desc">
+            Matcha Çayı, Fıstık, Tek Shot Espresso, Yulaf Sütü, Kahve Çekirdeği
+          </div>
+        </div>
+        <div class="price">250₺</div>
+      </div>
+      <div class="urun" id="Pome Bloom">
+        <div class="content">
+          <div class="name">Pome Bloom</div>
+          <div class="desc">
+            Cold 911 Çayı ( Portakal Ve Okaliptüs), Nar Ve Yaban Mersini Aroması, Portakal Dilim
+          </div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="zenpassion">
+        <div class="content">
+          <div class="name">Zen Passion</div>
+          <div class="desc">
+            Cold 911 Çayı ( Portakal Ve Okaliptüs), Çarkıfelek Meyvesi Aroması, Menta Cubana, Tonik, Portakal Dilimi Ve Nane
+          </div>
+        </div>
+        <div class="price">220₺</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="js/lightbox-plus-jquery.min.js"
+    ></script>
+    <script>
+    function redirectTo(lang) {
+      const landing = document.getElementById('landing');
+      const popup = document.getElementById('languagePopup');
+
+      if (lang === 'tr') {
+        popup.style.display = 'none';
+        landing.style.display = 'block';
+      } 
+      else if (lang === 'eng') {
+        window.location.href = "menu-english.html";
+      }
+      else if (lang === 'rus') {
+        window.location.href = "menu-russian.html";
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('landing').style.display = 'none';
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bake & More Qr Menu</title>
+  </head>
+
+  <body style="max-width: 768px; margin: auto">
+    <div class="language-popup" id="languagePopup">
+      <div class="language-box">
+        <h2>Lütfen Dilinizi Seçin / Please Choose Your Language / Выберите язык</h2>
+        <button class="language-btn tr" onclick="redirectTo('tr')">TÜRKÇE</button>
+        <button class="language-btn eng" onclick="redirectTo('eng')">ENGLISH</button>
+        <button class="language-btn rus" onclick="redirectTo('rus')">РУССКИЙ</button>
+      </div>
+    </div>
+    <a href="#navigation" id="goTop" title="Go to top"
+      ><img
+        src="images/icons/arrow-up-solid.svg"
+        class="upArrow"
+        style="width: 27px"
+    /></a>
+    <header id="navbar"></header>
+
+    <div class="land" id="landing">
+      <img src="images/trans_logo.svg" class="mainLogo" />
+      <h3>Welcome To <br></br>Bake & More</h3>
+      <h4>For moments sweeter than sugar...<br></br></h4>
+      <h4>Bake & More awaits you!</h4>
+    </div>
+    <br />
+    
+    <hr id="navigation" />
+    <div class="nav">
+      Завтрак
+      <ul>
+        <a href="#breakspes">Специальные завтраки</a>
+        <a href="#breakaddons">Дополнения к завтраку</a>
+        <a href="#breakburger">Бургеры на завтрак</a>
+        <a href="#omelele">Омлеты</a>
+        <a href="#sweetbreakspes">Сладкие завтраки</a>
+        <a href="#breaksandwiches">Сэндвичи</a>
+      </ul>
+      Напитки
+      <ul>
+        <a href="#craftedcoffee">Авторский кофе</a>
+        <a href="#craftedcoldcoffee">Холодный кофе</a>
+        <a href="#teablends">Чайные смеси</a>
+        <a href="#smoothies">Вкусные смузи</a>
+        <a href="#lemonade">Домашние лимонады</a>
+        <a href="#refreshings">Освежающие напитки</a>
+        <a href="#uniquerefreshings">Уникальные напитки</a>
+      </ul>
+    </div>
+    <hr id="breakspes"/>
+    <div class="menu">
+      <h3>Специальные завтраки</h3>
+      <div class="urun" id="cıryur">
+        <div class="content">
+          <div class="name">Scrambled Eggs</div>
+          <div class="desc">
+            Яичница, вяленые томаты, сырная цедра
+          </div>
+        </div>
+        <div class="price">330₺</div>
+      </div>
+      <div class="urun" id="avocıryur">
+        <div class="content">
+          <div class="name">Avocado Scrambled Eggs</div>
+          <div class="desc">
+            Яичница, ломтики авокадо, сырная цедра
+          </div>
+        </div>
+        <div class="price">380₺</div>
+      </div>
+      <div class="urun" id="hellim">
+        <div class="content">
+          <div class="name">Halloumi</div>
+          <div class="desc">
+            Пюре из авокадо, жареный халуми с медом и кунжутом
+          </div>
+        </div>
+        <div class="price">350₺</div>
+      </div>
+      <div class="urun" id="smokedsalmon">
+        <div class="content">
+          <div class="name">Smoked Salmon</div>
+          <div class="desc">
+            Копченый лосось, сливочный сыр с укропом, ломтики авокадо, каперсы, тонко нарезанные огурцы
+          </div>
+        </div>
+        <div class="price">370₺</div>
+      </div>
+      <div class="urun" id="smokedbeefegg">
+        <div class="content">
+          <div class="name">Smoked Entrecote Scrambled Eggs</div>
+          <div class="desc">
+            Яичница, копченый антрекот, чеддер, сырная цедра
+          </div>
+        </div>
+        <div class="price">450₺</div>
+      </div>
+      <div class="urun" id="smokedsausageegg">
+        <div class="content">
+          <div class="name">Sausage Scrambled Eggs</div>
+          <div class="desc">
+            Яичница с говяжьей колбасой, сырная цедра
+          </div>
+        </div>
+        <div class="price">440₺</div>
+      </div>
+      </div>
+      &nbsp;
+      <div class="urun" id="ac1">
+        <div class="content">
+          <div class="desc">
+            Специальные завтраки подаются с салатом и ломтиком цельнозернового хлеба на закваске.
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr id="breakaddons" />
+    <div class="menu">
+      <h3>Breakfast Add-Ons</h3>
+      <div class="urun" id="ilavekuruvasan">
+        <div class="content">
+          <div class="name">Croisant (Instead Of Sour Dough)</div>
+        </div>
+        <div class="price">80₺</div>
+      </div>
+      <div class="urun" id="ilaveavokado">
+        <div class="content">
+          <div class="name">Sliced Avocados</div>
+        </div>
+        <div class="price">60₺</div>
+      </div>
+      <div class="urun" id="addoneggs">
+        <div class="content">
+          <div class="name">Egg Sunny Side Up / Poached Egg / Scrambled Egg</div>
+        </div>
+        <div class="price">60₺</div>
+      </div>
+      <div class="urun" id="ilavebeefsausage">
+        <div class="content">
+          <div class="name">Smoked Beef Sausage</div>
+        </div>
+        <div class="price">140₺</div>
+      </div>
+    </div>
+      <hr id="breakburger" />
+      <div class="menu">
+        <h3>Kahvaltı Burgerleri</h3>
+        <div class="urun" id="avobreakburger">
+          <div class="content">
+            <div class="name">Avocado Egg Burger</div>
+            <div class="desc">
+              Яичница, ломтики авокадо, карамелизированный лук, чеддер, соус шрирача майо
+            </div>
+          </div>
+          <div class="price">350₺</div>
+        </div>
+        <div class="urun" id="smokedbeefbreakburger">
+          <div class="content">
+            <div class="name">Smoked Entrecote Egg Burger</div>
+            <div class="desc">
+              Яичница, ломтики авокадо, копченый антрекот, чеддер, соус шрирача майо
+            </div>
+          </div>
+          <div class="price">440₺</div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <hr id="omelele" />
+      <div class="menu">
+        <h3>Omletler</h3>
+        <div class="urun" id="french">
+          <div class="content">
+            <div class="name">French Omelette</div>
+            <div class="desc">
+              Обычный омлет
+            </div>
+          </div>
+          <div class="price">310₺</div>
+        </div>
+        </div>
+        <div class="urun" id="3cheeseom">
+          <div class="content">
+            <div class="name">3 Cheese Omelette</div>
+            <div class="desc">
+              С моцареллой, турецким сыром тулум и чеддером
+            </div>
+          </div>
+          <div class="price">360₺</div>
+        </div>
+        </div>
+        <div class="urun" id="hamandcheeseom">
+          <div class="content">
+            <div class="name">Ham And Cheese Omelette</div>
+            <div class="desc">
+              Сыр кашар, говяжья ветчина
+            </div>
+          </div>
+          <div class="price">400₺</div>
+        </div>
+        </div>
+        <div class="urun" id="veggieom">
+          <div class="content">
+            <div class="name">Veggie Omelette</div>
+            <div class="desc">
+              Моцарелла, грибы, помидоры, зеленый перец
+            </div>
+          </div>
+          <div class="price">370₺</div>
+        </div>
+        </div>
+        <div class="urun" id="ac1">
+          <div class="content">
+            <div class="desc">
+              Омлеты подаются с кусочком поджаренного цельнозернового хлеба на закваске и салатом.
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr id="sweetbreakspes" />
+    <div class="menu">
+      <h3>Sweat Breakfast Specials</h3>
+      <div class="urun" id="grabowl">
+        <div class="content">
+          <div class="name">Granola Bowl</div>
+          <div class="desc">
+            Йогурт, гранола, банан, клубника, голубика, семена чиа
+          </div>
+        </div>
+        <div class="price">370₺</div>
+      </div>
+      </div>
+      <div class="urun" id="bananayulaf">
+        <div class="content">
+          <div class="name">Banana Porridge</div>
+          <div class="desc">
+            Овсяная каша с бананами, корицей, тёртым горьким шоколадом и миндальными хлопьями
+          </div>
+        </div>
+        <div class="price">320₺</div>
+      </div>
+      <div class="urun" id="berryyulaf">
+        <div class="content">
+          <div class="name">Berry Porridge</div>
+          <div class="desc">
+            Овсяная каша с клубникой, голубикой, корицей и миндальными хлопьями
+          </div>
+        </div>
+        <div class="price">350₺</div>
+      </div>
+    </div>
+    <hr id="breaksandwiches" />
+    <div class="menu">
+      <h3>Sandwiches</h3>
+      <div class="urun" id="simitsand">
+        <div class="content">
+          <div class="name">Simit Sandwich</div>
+          <div class="desc">
+            Турецкий симит, сыр Эзине, помидоры
+          </div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      </div>
+      <div class="urun" id="caprese">
+        <div class="content">
+          <div class="name">Caprese</div>
+          <div class="desc">
+            Чиабатта с моцареллой, помидорами, базиликом и соусом песто
+          </div>
+        </div>
+        <div class="price">290₺</div>
+      </div>
+      </div>
+      <div class="urun" id="smokedturkeysand">
+        <div class="content">
+          <div class="name">Smoked Turkey</div>
+          <div class="desc">
+            Чиабатта с копчёной индейкой, копчёным сыром, чеддером, рукколой и острым джемом из красного перца
+          </div>
+        </div>
+        <div class="price">350₺</div>
+      </div>
+      </div>
+      <div class="urun" id="smokedbeefsand">
+        <div class="content">
+          <div class="name">Smoked Entrecote</div>
+          <div class="desc">
+            Фокачча с копчёным антрекотом, моцареллой, сливочным сыром с песто, помидорами, рукколой и бальзамическим глазуром
+          </div>
+        </div>
+        <div class="price">390₺</div>
+      </div>
+      </div>
+      <div class="urun" id="smokedsalmonsand">
+        <div class="content">
+          <div class="name">Smoked Salmon</div>
+          <div class="desc">
+            Чиабатта с копчёным лососем, ломтиками авокадо, тонко нарезанными огурцами, сливочным сыром с укропом, каперсами и рукколой
+          </div>
+        </div>
+        <div class="price">390₺</div>
+      </div>
+      </div>
+      <div class="urun" id="hamandcheesesand">
+        <div class="content">
+          <div class="name">Ham & Cheese</div>
+          <div class="desc">
+            Фокачча с говяжьей ветчиной, сыром кашар, салатом, солёными огурцами и сливочным сыром
+          </div>
+        </div>
+        <div class="price">330₺</div>
+      </div>
+      </div>
+      <div class="urun" id="trufflecottosand">
+        <div class="content">
+          <div class="name">Truffle Beef Cotto</div>
+          <div class="desc">
+            Фокачча с говядиной котто, трюфельным соусом, сыром моцарелла, карамелизированным луком и рукколой
+          </div>
+        </div>
+        <div class="price">410₺</div>
+      </div>
+    </div>
+    <hr id="craftedcoffee"/>
+    <div class="menu">
+      <h3>Crafted Coffee</h3>
+      <div class="urun" id="esp">
+        <div class="content">
+          <div class="name">Espresso (Single Or Double Shot)</div>
+        </div>
+        <div class="price">110/140₺</div>
+      </div>
+      <div class="urun" id="filteredcoff">
+        <div class="content">
+          <div class="name">Filtered Coffee</div>
+        </div>
+        <div class="price">100₺</div>
+      </div>
+      <div class="urun" id="americano">
+        <div class="content">
+          <div class="name">Americano</div>
+        </div>
+        <div class="price">130₺</div>
+      </div>
+      <div class="urun" id="decafamericano">
+        <div class="content">
+          <div class="name">Decaf Americano</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="cappuccino">
+        <div class="content">
+          <div class="name">Cappuccino</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="decafcappuccino">
+        <div class="content">
+          <div class="name">Decaf Cappuccino</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="lactosecappuccino">
+        <div class="content">
+          <div class="name">Lactose-Free Milk Cappuccino</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="vegancappuccino">
+        <div class="content">
+          <div class="name">Vegan Cappuccino</div>
+          <div class="desc">
+            На кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="plainlatte">
+        <div class="content">
+          <div class="name">Latte</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="decaflatte">
+        <div class="content">
+          <div class="name">Decaf Latte</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="lactoselatte">
+        <div class="content">
+          <div class="name">Lactose-Free Milk Latte</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="veganlatte">
+        <div class="content">
+          <div class="name">Vegan Latte</div>
+          <div class="desc">
+            На кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="plainflatwhite">
+        <div class="content">
+          <div class="name">Flat White</div>
+          <div class="desc">
+            С двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="decafflatwhite">
+        <div class="content">
+          <div class="name">Decaf Flat White</div>
+          <div class="desc">
+            С двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="lactoseflatwhite">
+        <div class="content">
+          <div class="name">Lactose-Free Flat White</div>
+          <div class="desc">
+            С двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="veganflatwhite">
+        <div class="content">
+          <div class="name">Vegan Flat White</div>
+          <div class="desc">
+            На кокосовом, миндальном или овсяном молоке с двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="plaincortado">
+        <div class="content">
+          <div class="name">Cortado</div>
+          <div class="desc">
+            С двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="decafcortado">
+        <div class="content">
+          <div class="name">Decaf Cortado</div>
+          <div class="desc">
+            С двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="lactosecortado">
+        <div class="content">
+          <div class="name">Lactose-Free Cortado</div>
+          <div class="desc">
+            С двойной порцией эспрессо
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="plainmatcha">
+        <div class="content">
+          <div class="name">Matcha Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="veganmatcha">
+        <div class="content">
+          <div class="name">Vegan Matcha Latte</div>
+          <div class="desc">
+            На кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="caffemocha">
+        <div class="content">
+          <div class="name">Coffee Mocha</div>
+          <div class="desc">
+            С белым или горьким шоколадом, карамелью, солёной карамелью, ириской
+          </div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="turkishcoffee">
+        <div class="content">
+          <div class="name">Turkish Coffee (Normal / Double)</div>
+        </div>
+        <div class="price">90/150₺</div>
+      </div>
+      <div class="urun" id="hotchocolate">
+        <div class="content">
+          <div class="name">Hot Chocolate</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="extraesp">
+        <div class="content">
+          <div class="name">Extra Shot Espresso</div>
+        </div>
+        <div class="price">50₺</div>
+      </div>
+    </div>
+    <hr id="craftedcoldcoffee"/>
+    <div class="menu">
+      <h3>Crafted Cold Coffee</h3>
+      <div class="urun" id="icedamericano">
+        <div class="content">
+          <div class="name">Iced Americano</div>
+        </div>
+        <div class="price">130₺</div>
+      </div>
+      <div class="urun" id="decaficedamericano">
+        <div class="content">
+          <div class="name">Decaf Iced Americano</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="icedcoffeewhite">
+        <div class="content">
+          <div class="name">Iced Coffee White</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="decaficedcoffeewhite">
+        <div class="content">
+          <div class="name">Decaf Iced Coffee White</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="veganicedcoffeewhite">
+        <div class="content">
+          <div class="name">Vegan Iced Coffee White</div>
+          <div class="desc">
+            Сделано на кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedmatcha">
+        <div class="content">
+          <div class="name">Iced Matcha Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedveganmatcha">
+        <div class="content">
+          <div class="name">Iced Vegan Matcha Latte</div>
+          <div class="desc">
+            Сделано на кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="icedlactoselatte">
+        <div class="content">
+          <div class="name">Iced Lactose-Free Latte</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="flavouredicelatte">
+        <div class="content">
+          <div class="name">Flavoured İce Latte</div>
+          <div class="desc">
+            Фундук, ирис, тыквенная специя, лаванда, ваниль, карамель, персик, мята, черная смородина, клубника, яблоко, банан
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="decafflavouredicelatte">
+        <div class="content">
+          <div class="name">Decaf Flavoured İce Latte</div>
+          <div class="desc">
+            Ваниль, карамель, персик, мята, черная смородина, клубника, яблоко
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="icedmocha">
+        <div class="content">
+          <div class="name">Iced Coffee Mocha</div>
+          <div class="desc">
+            Белый или горький шоколад, карамель, соленая карамель, ирис
+          </div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedfrappacino">
+        <div class="content">
+          <div class="name">Flavaoured Iced Frappacino</div>
+          <div class="desc">
+            Белый шоколад, горький шоколад, ваниль, карамель, персик, мята, клубника, банан, ирис, соленая карамель
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="icedtoffee">
+        <div class="content">
+          <div class="name">Bake And More Toffee Latte</div>
+          <div class="desc">
+            Молочный кофе с карамельным и шоколадным соусом
+          </div>
+        </div>
+        <div class="price">215₺</div>
+      </div>
+      <div class="urun" id="extraesp">
+        <div class="content">
+          <div class="name">Extra Shot Espresso</div>
+        </div>
+        <div class="price">50₺</div>
+      </div>
+      <div class="urun" id="ac1">
+        <div class="content">
+          <div class="desc">
+              Все фраппе подаются со взбитыми сливками. Пожалуйста, сообщите, если хотите иначе.
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr id="teablends"/>
+    <div class="menu">
+      <h3>Tea Blends</h3>
+      <div class="urun" id="chailatte">
+        <div class="content">
+          <div class="name">Chai Tea Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="veganchailatte">
+        <div class="content">
+          <div class="name">Vegan Chai Tea Latte</div>
+          <div class="desc">
+              Сделано на кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="icedchailatte">
+        <div class="content">
+          <div class="name">İced Chai Tea Latte</div>
+        </div>
+        <div class="price">195₺</div>
+      </div>
+      <div class="urun" id="icedveganchailatte">
+        <div class="content">
+          <div class="name">Vegan İced Chai Tea Latte</div>
+          <div class="desc">
+              Сделано на кокосовом, миндальном или овсяном молоке
+          </div>
+        </div>
+        <div class="price">225₺</div>
+      </div>
+      <div class="urun" id="looseleafteas">
+        <div class="content">
+          <div class="name">Loose Leaf Teas</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="englishtea">
+        <div class="content">
+          <div class="name">English PG Tips</div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="englishteapot">
+        <div class="content">
+          <div class="name">English PG Tips Tea Pot</div>
+        </div>
+        <div class="price">275₺</div>
+      </div>
+      <div class="urun" id="turkishtea">
+        <div class="content">
+          <div class="name">Turkish Tea (Small / Large)</div>
+        </div>
+        <div class="price">50/90₺</div>
+      </div>
+    </div>
+    <hr id="smoothies"/>
+    <div class="menu">
+      <h3>Delish Smoothies</h3>
+      <div class="urun" id="strawberrywhirl">
+        <div class="content">
+          <div class="name">Strawberry Whirl</div>
+          <div class="desc">
+            Клубника, банан, апельсиновый сок
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="strawberrynirvana">
+        <div class="content">
+          <div class="name">Strawberry Nirvana</div>
+          <div class="desc">
+            Клубника, ананас, ананасовый сок, черная смородина
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="thunder">
+        <div class="content">
+          <div class="name">Yellow Thunder</div>
+          <div class="desc">
+            Банан, яблоко, ананас, ананасовый сок, апельсиновый сок
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="tropicana">
+        <div class="content">
+          <div class="name">Tropicana</div>
+          <div class="desc">
+            Яблоко, киви, ананасовый сок
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="smoothiecombo">
+        <div class="content">
+          <div class="name">Bake & More Frozen Combo</div>
+          <div class="desc">
+            Маракуйя, манго, банан, киви, клюквенный сок
+          </div>
+        </div>
+        <div class="price">260₺</div>
+      </div>
+    </div>
+    <hr id="lemonade"/>
+    <div class="menu">
+      <h3>Our Unique Lemonades</h3>
+      <div class="urun" id="classiclemonade">
+        <div class="content">
+          <div class="name">Classic Homemade Lemonade</div>
+        </div>
+        <div class="price">130₺</div>
+      </div>
+      <div class="urun" id="strawberrylemonade">
+        <div class="content">
+          <div class="name">Strawberry Homemade Lemonade</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="mintlemonade">
+        <div class="content">
+          <div class="name">Mint Homemade Lemonade</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="applelemonade">
+        <div class="content">
+          <div class="name">Apple Homemade Lemonade</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="kiwilemonade">
+        <div class="content">
+          <div class="name">Kiwi Homemade Lemonade</div>
+        </div>
+        <div class="price">160₺</div>
+      </div>
+      <div class="urun" id="mangolemonade">
+        <div class="content">
+          <div class="name">Mango Homemade Lemonade</div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="frozenlemonade">
+        <div class="content">
+          <div class="name">Bake & More Unique Frozen Lemonade</div>
+          <div class="desc">
+            Киви, ананас, домашний лимонад
+          </div>
+        </div>
+        <div class="price">185₺</div>
+      </div>
+    </div>
+    <hr id="refreshings"/>
+    <div class="menu">
+      <h3>Soft Refreshings</h3>
+      <div class="urun" id="water">
+        <div class="content">
+          <div class="name">Water (Small / Large)</div>
+        </div>
+        <div class="price">50/80₺</div>
+      </div>
+      <div class="urun" id="soda">
+        <div class="content">
+          <div class="name">Sparkling Water (Small / Large)</div>
+        </div>
+        <div class="price">75/125₺</div>
+      </div>
+      <div class="urun" id="canneddrinks">
+        <div class="content">
+          <div class="name">Canned Drinks</div>
+          <div class="desc">
+            Cola, Cola Zero, Fanta, Sprite, Iced Tea, Tonic, Bitter Lemon
+          </div>
+        </div>
+        <div class="price">90₺</div>
+      </div>
+      <div class="urun" id="milkshake">
+        <div class="content">
+          <div class="name">Milkshakes</div>
+          <div class="desc">
+            Пожалуйста, выберите мороженое у стойки. (Все молочные коктейли подаются со взбитыми сливками. Сообщите, если хотите иначе.)
+          </div>
+        </div>
+        <div class="price">245₺</div>
+      </div>
+      <div class="urun" id="cartonjuices">
+        <div class="content">
+          <div class="name">Fruit Juices Carton</div>
+          <div class="desc">
+            Апельсиновый, яблочный, ананасовый, вишневый
+          </div>
+        </div>
+        <div class="price">90₺</div>
+      </div>
+      <div class="urun" id="freshorangejuice">
+        <div class="content">
+          <div class="name">Fresh Orange Juice</div>
+        </div>
+        <div class="price">170₺</div>
+      </div>
+      <div class="urun" id="redbull">
+        <div class="content">
+          <div class="name">Redbull</div>
+        </div>
+        <div class="price">140₺</div>
+      </div>
+    </div>
+    <hr id="uniquerefreshings"/>
+    <div class="menu">
+      <h3>Unique Refreshings</h3>
+      <div class="urun" id="coolbotanica">
+        <div class="content">
+          <div class="name">Cool Botanica</div>
+          <div class="desc">
+            Hibiscus Tea, Pomegranate Flavour, Menta Cubana, Slice Of Orange, Fresh Mint
+          </div>
+        </div>
+        <div class="price">150₺</div>
+      </div>
+      <div class="urun" id="jasminesunrise">
+        <div class="content">
+          <div class="name">Jasmine Sunrise</div>
+          <div class="desc">
+            Jasmine Tea, Peach And Grapefruit Flavour, Orange Zest
+          </div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="pistachiocreamcrush">
+        <div class="content">
+          <div class="name">Pistachio Cream Crush</div>
+          <div class="desc">
+            Pistachio Flavour, Cheese Cake Sauce, Milk, Single Shot Espresso With Coffee Beans
+          </div>
+        </div>
+        <div class="price">200₺</div>
+      </div>
+      <div class="urun" id="mangocubana">
+        <div class="content">
+          <div class="name">Mango Cubana</div>
+          <div class="desc">
+            Mango Tea, Mango Flavour, Menta Cubana, Fresh Lemon Juice With Slice Of Lemon And Mint
+          </div>
+        </div>
+        <div class="price">190₺</div>
+      </div>
+      <div class="urun" id="matchamirage">
+        <div class="content">
+          <div class="name">Matcha Mirage</div>
+          <div class="desc">
+            Matcha Tea, Pistachio, Single Shot Espresso, Oat Milk With Coffee Beans
+          </div>
+        </div>
+        <div class="price">250₺</div>
+      </div>
+      <div class="urun" id="Pome Bloom">
+        <div class="content">
+          <div class="name">Pome Bloom</div>
+          <div class="desc">
+            Cold 911 Tea (Orange And Eucalyptus), Pomegranate And Blueberry Flavour, Slice Of Orange
+          </div>
+        </div>
+        <div class="price">175₺</div>
+      </div>
+      <div class="urun" id="zenpassion">
+        <div class="content">
+          <div class="name">Zen Passion</div>
+          <div class="desc">
+            Cold 911 Tea (Orange And Eucalyptus), Passion Fruit Flavour, Menta Cubana, Tonic Water With Slice Of Orange And Mint
+          </div>
+        </div>
+        <div class="price">220₺</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="js/lightbox-plus-jquery.min.js"
+    ></script>
+     <script>
+    function redirectTo(lang) {
+      const landing = document.getElementById('landing');
+      const popup = document.getElementById('languagePopup');
+      if (lang === 'rus') {
+        popup.style.display = 'none';
+        landing.style.display = 'block';
+      } 
+      else if (lang === 'tr') {
+        window.location.href = "index.html";
+      }
+      else if (lang === 'rus') {
+        window.location.href = "menu-english.html";
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('landing').style.display = 'none';
+    });
+  </script>
+  </body>
+</html>
